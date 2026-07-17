@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify Your Account - Leh Lu Kya?</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f7f9fc;
+      color: #1e293b;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+      border: 1px solid #eef2f6;
+    }
+    .email-header {
+      background: #101c31; /* kuli-blue-dark */
+      padding: 48px 40px;
+      text-align: center;
+      position: relative;
+    }
+    .logo-container {
+      background: #f43f5e; /* kuli-red */
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 24px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 16px rgba(244, 63, 94, 0.3);
+    }
+    .logo-container img {
+      width: 32px;
+      height: 32px;
+    }
+    .email-header h1 {
+      color: #ffffff;
+      font-size: 28px;
+      font-weight: 900;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: -0.5px;
+    }
+    .email-content {
+      padding: 48px 40px;
+      line-height: 1.6;
+    }
+    .email-content h2 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #101c31;
+      margin-bottom: 20px;
+    }
+    .email-content p {
+      font-size: 16px;
+      color: #64748b;
+      margin-bottom: 32px;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #f43f5e; /* kuli-red */
+      color: #ffffff !important;
+      padding: 18px 36px;
+      border-radius: 14px;
+      font-weight: 900;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 14px;
+      box-shadow: 0 10px 20px rgba(244, 63, 94, 0.2);
+      transition: all 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #e11d48;
+      transform: translateY(-2px);
+    }
+    .footer {
+      padding: 32px 40px;
+      background: #f8fafc;
+      text-align: center;
+      border-top: 1px solid #eef2f6;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #94a3b8;
+      margin: 0;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .link-alt {
+       margin-top: 24px;
+       font-size: 12px;
+       color: #cbd5e1;
+       word-break: break-all;
+    }
+    .badge {
+      display: inline-block;
+      background: #f1f5f9;
+      padding: 4px 12px;
+      border-radius: 99px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #475569;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="email-header">
+      <div class="logo-container">
+        <!-- Using a placeholder for the truck icon as per user's theme -->
+        <svg fill="white" viewBox="0 0 24 24" width="32" height="32"><path d="M17 11h3l2 3v5h-2.1c-.2-1.1-1.2-1.9-2.4-1.9s-2.2.8-2.4 1.9H10c-.2-1.1-1.2-1.9-2.4-1.9s-2.2.8-2.4 1.9H3V4h14v7zm-5 1H4v5h1.1c.2-1.1 1.2-1.9 2.4-1.9s2.2.8 2.4 1.9h2.1v-5zM6.5 18c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5zm10 0c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5z"></path></svg>
+      </div>
+      <h1>Leh Lu Kya?</h1>
+    </div>
+    
+    <div class="email-content">
+      <div class="badge">Security Verification</div>
+      <h2>Verify your account identity</h2>
+      <p>Hello Traveler / Porter,</p>
+      <p>Welcome to our transport ecosystem. To ensure a safe and secure experience for everyone, we need you to confirm your email identity.</p>
+      
+      <a href="%LINK%" class="cta-button">Confirm Address Now</a>
+      
+      <p style="margin-top: 32px;">If you didn't create an account with Leh Lu Kya, please ignore this email. This link will expire shortly for your security.</p>
+      
+      <div class="link-alt">
+        Trouble with the button? Copy and paste this:<br>
+        %LINK%
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>&copy; 2026 Leh Lu Kya Transport Platform. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>

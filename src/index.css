@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-kuli-earth-light text-kuli-dark min-h-screen font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-accent font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-2.5 rounded-kuli font-bold transition-all duration-300 flex items-center justify-center gap-2 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-primary {
+    @apply bg-kuli-red text-white hover:bg-kuli-red-dark shadow-md hover:shadow-kuli-hover;
+  }
+  
+  .btn-secondary {
+    @apply bg-kuli-blue text-white hover:bg-kuli-blue-dark shadow-md hover:shadow-kuli-hover;
+  }
+
+  .btn-outline {
+    @apply border-2 border-kuli-red text-kuli-red hover:bg-kuli-red hover:text-white;
+  }
+  
+  .card {
+    @apply bg-white rounded-kuli p-6 shadow-kuli border border-kuli-earth-dark;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2.5 rounded-lg border border-kuli-earth-dark focus:border-kuli-red focus:ring-2 focus:ring-kuli-red/20 transition-all outline-none;
+  }
+  
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/30;
+  }
+}
+
+/* Animations */
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-in-out forwards;
+}
